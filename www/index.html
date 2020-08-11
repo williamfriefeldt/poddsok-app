@@ -46,24 +46,17 @@
 			poddsokApp.config(['$routeProvider',function($routeProvider){
 				/* Handle routes */
 				$routeProvider.
-					when('',{
+					when('/',{
 						templateUrl: "views/main.html",
 						controller:  "MainCtrl",
 					}).
-					when('om',{
+					when('/om',{
 						templateUrl: "views/about.html"
 					}).
 					otherwise({
-						redirectTo: ""
+						redirectTo: "/"
 					});
 			}]);
-
-			// poddsokApp.config(['$locationProvider'], function($locationProvider){
-			// 	$locationProvider.html5Mode({
-   //  				enabled: false,
-   // 					requireBase: false
-			// 	});
-			// });
 
 
 			/* Make spotify uri safe */

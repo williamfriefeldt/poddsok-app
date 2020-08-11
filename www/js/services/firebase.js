@@ -19,6 +19,15 @@ poddsokApp.factory('Firebase', function ($q) {
 		return def.promise;
 	};
 
+    /* Get podcasts from firebase */
+    this.getPodcasts = function(){
+        var def = $q.defer();
+        firebase.database().ref('/').once('value').then(function(snapshot) {
+            def.resolve(snapshot.val());
+        });
+        return def.promise;
+    };
+
 	/* Add new episode info to firebase */
 	this.setEpInfo = function(data){
 	  	var updates = {};

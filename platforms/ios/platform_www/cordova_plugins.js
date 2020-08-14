@@ -13,7 +13,8 @@ module.exports.metadata =
 // TOP OF METADATA
 {
   "cordova-plugin-keyboard": "1.2.0",
-  "cordova-plugin-whitelist": "1.3.4"
+  "cordova-plugin-whitelist": "1.3.4",
+  "cordova-plugin-splashscreen": "6.0.0"
 };
 // BOTTOM OF METADATA
 });

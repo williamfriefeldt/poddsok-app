@@ -12,6 +12,9 @@
     },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.zendigital.ngphonegap"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.zendigital.ngphonegap"
     }
   },
   "dependent_plugins": {}

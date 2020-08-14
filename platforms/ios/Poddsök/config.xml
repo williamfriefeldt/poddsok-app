@@ -54,4 +54,6 @@
     <preference name="PageLength" value="0" />
     <preference name="PaginationBreakingMode" value="page" />
     <preference name="PaginationMode" value="unpaginated" />
+    <preference name="BackgroundColor" value="#320E44" />
+    <preference name="AutoHideSplashScreen" value="false" />
 </widget>

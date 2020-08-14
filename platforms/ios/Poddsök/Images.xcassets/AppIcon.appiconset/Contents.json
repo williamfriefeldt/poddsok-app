@@ -1,157 +1,157 @@
 {
   "images" : [
     {
-      "filename" : "icon-20@2x.png",
+      "filename" : "poddsok-title-icon-40x40-2.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
-      "filename" : "icon-20@3x.png",
+      "filename" : "poddsok-title-icon-60x60.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "20x20"
     },
     {
-      "filename" : "icon-small.png",
+      "filename" : "poddsok-title-icon-29x29.png",
       "idiom" : "iphone",
       "scale" : "1x",
       "size" : "29x29"
     },
     {
-      "filename" : "icon-small@2x.png",
+      "filename" : "poddsok-title-icon-58x58.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "icon-small@3x.png",
+      "filename" : "poddsok-title-icon-87x87.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "29x29"
     },
     {
-      "filename" : "icon-40@2x.png",
+      "filename" : "poddsok-title-icon-80x80.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
-      "filename" : "icon-60@2x.png",
+      "filename" : "poddsok-title-icon-120x120.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "40x40"
     },
     {
-      "filename" : "icon.png",
+      "filename" : "poddsok-title-icon-57x57.png",
       "idiom" : "iphone",
       "scale" : "1x",
       "size" : "57x57"
     },
     {
-      "filename" : "icon@2x.png",
+      "filename" : "poddsok-title-icon-114x114.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "57x57"
     },
     {
-      "filename" : "icon-60@2x.png",
+      "filename" : "poddsok-title-icon-120x120-1.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
-      "filename" : "icon-60@3x.png",
+      "filename" : "poddsok-title-icon-180x180.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"
     },
     {
-      "filename" : "icon-20.png",
+      "filename" : "poddsok-title-icon-20x20 .png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "20x20"
     },
     {
-      "filename" : "icon-20@2x.png",
+      "filename" : "poddsok-title-icon-40x40.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
-      "filename" : "icon-small.png",
+      "filename" : "poddsok-title-icon-29x29-1.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "29x29"
     },
     {
-      "filename" : "icon-small@2x.png",
+      "filename" : "poddsok-title-icon-58x58-1.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "icon-40.png",
+      "filename" : "poddsok-title-icon-40x40-1.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "40x40"
     },
     {
-      "filename" : "icon-40@2x.png",
+      "filename" : "poddsok-title-icon-80x80-1.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
-      "filename" : "icon-50.png",
+      "filename" : "poddsok-title-icon-50x50.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "50x50"
     },
     {
-      "filename" : "icon-50@2x.png",
+      "filename" : "poddsok-title-icon-100x100.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "50x50"
     },
     {
-      "filename" : "icon-72.png",
+      "filename" : "poddsok-title-icon-72x72.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "72x72"
     },
     {
-      "filename" : "icon-72@2x.png",
+      "filename" : "poddsok-title-icon-144x144.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "72x72"
     },
     {
-      "filename" : "icon-76.png",
+      "filename" : "poddsok-title-icon-76x76.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "76x76"
     },
     {
-      "filename" : "icon-76@2x.png",
+      "filename" : "poddsok-title-icon-152x152.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "76x76"
     },
     {
-      "filename" : "icon-83.5@2x.png",
+      "filename" : "poddsok-title-icon-167x167.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "83.5x83.5"
     },
     {
-      "filename" : "icon-1024.png",
+      "filename" : "poddsok-title-icon-1024x1024.png",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"
     },
     {
-      "filename" : "AppIcon24x24@2x.png",
+      "filename" : "poddsok-title-icon-48x48.png",
       "idiom" : "watch",
       "role" : "notificationCenter",
       "scale" : "2x",
@@ -159,7 +159,7 @@
       "subtype" : "38mm"
     },
     {
-      "filename" : "AppIcon27.5x27.5@2x.png",
+      "filename" : "poddsok-title-icon-55x55.png",
       "idiom" : "watch",
       "role" : "notificationCenter",
       "scale" : "2x",
@@ -167,21 +167,21 @@
       "subtype" : "42mm"
     },
     {
-      "filename" : "AppIcon29x29@2x.png",
+      "filename" : "poddsok-title-icon-58x58-2.png",
       "idiom" : "watch",
       "role" : "companionSettings",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "AppIcon29x29@3x.png",
+      "filename" : "poddsok-title-icon-87x87-1.png",
       "idiom" : "watch",
       "role" : "companionSettings",
       "scale" : "3x",
       "size" : "29x29"
     },
     {
-      "filename" : "AppIcon40x40@2x.png",
+      "filename" : "poddsok-title-icon-80x80-2.png",
       "idiom" : "watch",
       "role" : "appLauncher",
       "scale" : "2x",
@@ -189,6 +189,7 @@
       "subtype" : "38mm"
     },
     {
+      "filename" : "poddsok-title-icon-88x88.png",
       "idiom" : "watch",
       "role" : "appLauncher",
       "scale" : "2x",
@@ -196,6 +197,7 @@
       "subtype" : "40mm"
     },
     {
+      "filename" : "poddsok-title-icon-100x100-1.png",
       "idiom" : "watch",
       "role" : "appLauncher",
       "scale" : "2x",
@@ -203,7 +205,7 @@
       "subtype" : "44mm"
     },
     {
-      "filename" : "AppIcon86x86@2x.png",
+      "filename" : "poddsok-title-icon-172x172.png",
       "idiom" : "watch",
       "role" : "quickLook",
       "scale" : "2x",
@@ -211,7 +213,7 @@
       "subtype" : "38mm"
     },
     {
-      "filename" : "AppIcon98x98@2x.png",
+      "filename" : "poddsok-title-icon-196x196.png",
       "idiom" : "watch",
       "role" : "quickLook",
       "scale" : "2x",
@@ -219,6 +221,7 @@
       "subtype" : "42mm"
     },
     {
+      "filename" : "poddsok-title-icon-216x216.png",
       "idiom" : "watch",
       "role" : "quickLook",
       "scale" : "2x",
@@ -226,18 +229,10 @@
       "subtype" : "44mm"
     },
     {
-      "filename" : "icon-1024.png",
+      "filename" : "poddsok-title-icon-1024x1024-1.png",
       "idiom" : "watch-marketing",
       "scale" : "1x",
       "size" : "1024x1024"
-    },
-    {
-      "filename" : "AppIcon44x44@2x.png",
-      "idiom" : "watch",
-      "role" : "longLook",
-      "scale" : "2x",
-      "size" : "44x44",
-      "subtype" : "42mm"
     }
   ],
   "info" : {

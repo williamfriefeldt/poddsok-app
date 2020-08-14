@@ -1,10 +1,3 @@
-/* --- Mobile settings --- */
-@media (max-width: 980px){
-	.modal-dialog {
-   		max-width: 75% !important;
-    	margin: 1.75rem auto;
-    }
-}
 /* --- General --- */
 body{
 	background-color: #320E44;
@@ -27,9 +20,6 @@ a{
 	overflow: hidden;
 	white-space: nowrap;
 } 
-a:hover{
-	color: white;
-}
 input{
 	width: 100%;
 	border-radius: 20px;
@@ -65,7 +55,7 @@ img{
 	border-radius:25px 25px 25px 25px;
 }
 p{
-	font-size: 25px;
+	font-size: 20px;
 	margin-bottom: 0;
 }
 .center{
@@ -111,7 +101,7 @@ p{
 	border-radius:25px 25px 25px 25px;
 }
 .pod-name{
-	margin-top: 3.75%;
+	margin-top: 5%;
     margin-left: 3.5%;
 	text-overflow: ellipsis;
 	overflow: hidden;
@@ -146,9 +136,6 @@ p{
 	padding-left:3% !important;
 
 }
-.modal-dialog{
-	max-width: 60%;
-}
 .sent{
 	height:200px;
 }
@@ -175,16 +162,12 @@ p{
 }
 .delete-icon{
 	padding-left: 1%;
-	font-size: 32px;
+	font-size: 25px;
 	transition: all linear 0.25s;
 }
 .delete-icon.ng-hide{
 	opacity: 0;
  	transition: none;
-}
-.delete-icon:hover{
-	font-size: 35px;
-	cursor: pointer;
 }
 .eptext-show{
 	float:right;
@@ -195,8 +178,9 @@ p{
 .about{
 	font-size: 30px;
 	margin-top: 3%;
-	max-height: 550px;
-	overflow-y: auto;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    max-height: calc(100vh - 105px);
 }
 .about a{
 	cursor: pointer;

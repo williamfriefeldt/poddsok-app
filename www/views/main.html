@@ -1,8 +1,8 @@
 <div class="container-fluid">
 	<!-- DeleteInfo popup -->
-	<div ng-include="'../views/deleteInfo.html'"></div>
+	<div ng-include="'views/deleteInfo.html'"></div>
 	<!-- AddInfo popup -->
-	<div ng-include="'../views/addInfo.html'"></div>
+	<div ng-include="'views/addInfo.html'"></div>
 	<!-- Show AddInfo popup -->
 	<div class="offset-2 offset-sm-7 offset-md-8 offset-lg-9">
 		<div class="row">
@@ -19,7 +19,7 @@
 
 		<div class="scroll col-12" ng-show="!loading">
 			<div ng-repeat="pod in allPods | filter:searchpodd | orderBy:'name' | filter:query as res">
-				<div class="pod click row" ng-click="showPod(); getEpisodes(pod.title)">
+				<div class="pod click row" ng-click="showPod(); getEpisodes(pod)">
 					<div class="col-2">
 						<img ng-src="{{pod.info.image}}">
 					</div>
@@ -46,28 +46,30 @@
 			<i ng-show="!sortEps" class="fas fa-arrow-alt-circle-up click" style="font-size:48.5px; margin-left: -10%" ng-click="changeSort()"></i>
 		</div>
 
-		<div class="scroll col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3" id="eps" ng-show="!loading">
+		<div class="scroll col-12" id="eps" ng-show="!loading">
 			<!-- Loop through episodes -->
 			<div ng-repeat="episode in episodes | filter: {minutes:{text:searchep}} | orderBy: sortEps ? 'nr' : '-nr' | filter:query as resEp">
-				<div class="pod row">
-					<div class="col-3 col-md-2">
-						<img ng-src="{{pod.info.image}}">
-					</div>
-					<div class="col-9 col-md-10">
-						<!-- Show/hide info in episode -->
-						<div ng-if="episode.minutes.length>1 && !searchep" ng-click="showMinText(episode)" ng-show="!searchep">
-							<i ng-show="!episode.showMin" class="fa fa-plus-circle eptext-show delete-icon"></i>
-							<i ng-show="episode.showMin" class="fa fa-minus-circle eptext-show delete-icon"></i>
-						</div>
-						<h2 class="pod-name" ng-class="{'pod-title-up':searchep}"><a href="{{episode.link}}" ng-show="searchep || episode.showMin"><i class="fa fa-play-circle"></i>l</a>{{episode.nr}}. {{episode.name}}</h2>
-						<!-- Display info in each episode -->
-						<div ng-show="searchep || episode.showMin" ng-repeat="minute in filtered = (episode.minutes | filter:{text:searchep} | orderBy:'nr')" ng-if="minute.text != ''" class="pod-show-hide">
-							<p class='inline'>{{minute.nr}} minuter: "<span class='inline' ng-bind-html="boldSearch(minute.text,searchep)"></span>"
-							</p>
-							<!-- Delete episode info -->
-							<i class="delete-icon fas fa-exclamation-circle" data-toggle="modal" data-target="#showDeleteInfo" ng-click="setDeleteInfo(minute,episode)"></i>
-						</div>
-					</div>
+				<div class="pod">
+                    <div class="row">
+                        <div class="col-2">
+                            <img ng-src="{{pod.info.image}}">
+                        </div>
+                        <div class="col-10">
+                            <!-- Show/hide info in episode -->
+                            <div ng-if="episode.minutes.length>1 && episode.epTxt && !searchep" ng-click="showMinText(episode)" ng-show="!searchep">
+                                <i ng-show="!episode.showMin" class="fa fa-plus-circle eptext-show delete-icon"></i>
+                                <i ng-show="episode.showMin" class="fa fa-minus-circle eptext-show delete-icon"></i>
+                            </div>
+                            <h2 class="pod-name" ng-class="{'pod-title-up':searchep}"><a href="{{episode.link}}" ng-show="searchep || episode.showMin"><i class="fa fa-play-circle"></i></a>{{episode.nr}}. {{episode.name}}</h2>
+                            <!-- Display info in each episode -->
+                        </div>
+                    </div>
+                    <div ng-show="searchep || episode.showMin" ng-repeat="minute in filtered = (episode.minutes | filter:{text:searchep} | orderBy:'nr')" ng-if="minute.text != ''" class="pod-show-hide row">
+                        <p class='inline col-10'>{{minute.nr}} minuter: "<span class='inline' ng-bind-html="boldSearch(minute.text,searchep)"></span>"
+                        </p>
+                        <!-- Delete episode info -->
+                        <i class="delete-icon fas fa-exclamation-circle col-2" data-toggle="modal" data-target="#showDeleteInfo" ng-click="setDeleteInfo(minute,episode)"></i>
+                    </div>
 				</div>
 			</div> 
 			<!-- If search word doesnt exist -->

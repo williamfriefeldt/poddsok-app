@@ -40,8 +40,18 @@ poddsokApp.factory('Model',function($q,Firebase){
 		Firebase.getEpisodes(pod).then(function(data){
 			episodes=Object.values(data);
 			for(var i=0;i<episodes.length;i++){
-				episodes[i].minutes=Object.values(episodes[i].minutes);
-				episodes[i]['showMin']=false;
+                if( episodes[i].minutes !== undefined) {
+                    episodes[i].minutes=Object.values(episodes[i].minutes);
+                    var epsWithTxt = episodes[i].minutes.find(function(ep) {
+                        if( ep.text !== '' ) return true;
+                    });
+                    if( epsWithTxt ) {
+                        episodes[i]['epTxt'] = true;
+                    } else {
+                        episodes[i]['epTxt'] = false;
+                    }
+                    episodes[i]['showMin']=false;
+                }
 			}
 			def.resolve();
 		});

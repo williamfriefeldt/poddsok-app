@@ -30,7 +30,7 @@ poddsokApp.controller('MainCtrl', function ($scope, Model, Firebase) {
 		
 		$scope.loading=true;
 		$scope.searchep='';
-		Model.getEpisodes(pod).then(function(){
+        Model.getEpisodes(pod.title).then(function(){
 			$scope.episodes=Model.getEps();
 			$scope.pod=pod;
 			podcast=pod;

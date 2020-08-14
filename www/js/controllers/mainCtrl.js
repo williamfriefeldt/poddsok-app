@@ -5,6 +5,7 @@ poddsokApp.controller('MainCtrl', function ($scope, Model, Firebase) {
 	var deleteInfo;
 
 	/* Scopes - variables accessable from HTML */
+    $scope.loading = true;
     Model.getPodcasts().then( function() {
         $scope.allPods= Model.getPods();
         $scope.loading=false;

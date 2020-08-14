@@ -7,23 +7,23 @@
 	<div class="offset-2 offset-sm-7 offset-md-8 offset-lg-9">
 		<div class="row">
 			<a class="col-5 col-sm-7 menu" data-toggle="modal" data-target="#showAddInfo">Lägg till</a>
-			<a href="/#!/om" class="col-4 col-sm-4 menu">Om</a>
+			<a href="#!/om" class="col-4 col-sm-4 menu">Om</a>
 		</div>
 	</div>
 	<h1 class="offset-1 col-10">poddsök.nu</h1>
 	<!-- Display podcasts -->
 	<div class="row pod-show-hide" ng-show="!podShow">
 		<div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-			<input ng-model="searchpodd" placeholder="Podcast..." autofocus>
+			<input ng-model="searchpodd" placeholder="Podcast...">
 		</div>
 
-		<div class="scroll col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-			<div ng-repeat="pod in allPods | filter:searchpodd | filter:query as res">
+		<div class="scroll col-12" ng-show="!loading">
+			<div ng-repeat="pod in allPods | filter:searchpodd | orderBy:'name' | filter:query as res">
 				<div class="pod click row" ng-click="showPod(); getEpisodes(pod.title)">
-					<div class="col-3 col-md-2">
-						<img ng-src="/resources/images/{{pod.title}}.png">
+					<div class="col-2">
+						<img ng-src="{{pod.info.image}}">
 					</div>
-					<div class="col-9 col-md-10">
+					<div class="col-10">
 						<h2 class="pod-name">{{pod.name}}</h2>
 					</div>
 				</div>
@@ -51,7 +51,7 @@
 			<div ng-repeat="episode in episodes | filter: {minutes:{text:searchep}} | orderBy: sortEps ? 'nr' : '-nr' | filter:query as resEp">
 				<div class="pod row">
 					<div class="col-3 col-md-2">
-						<img ng-src="/resources/images/{{pod}}.png">
+						<img ng-src="{{pod.info.image}}">
 					</div>
 					<div class="col-9 col-md-10">
 						<!-- Show/hide info in episode -->
@@ -76,8 +76,9 @@
 			</div>
 		</div>
 		<!-- Loading symbol when retrieving episodes -->
-		<div class="col-12 col-sm-6 offset-sm-3" ng-show="loading">
-			<img class="offset-5" src="/resources/gifs/loading.gif">
-		</div>
+
 	</div>
+    <div class="col-12 col-sm-6 offset-sm-3" ng-show="loading">
+        <img class="offset-5" src="resources/gifs/loading.gif">
+    </div>
 </div>

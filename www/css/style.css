@@ -5,15 +5,6 @@
     	margin: 1.75rem auto;
     }
 }
-@media (min-height: 900px){
-	.scroll{
-		max-height: 1200px !important;
-	}
-	.about{
-		max-height: 1350px !important;
-	}
-}
-
 /* --- General --- */
 body{
 	background-color: #320E44;
@@ -22,29 +13,28 @@ body{
 	overflow-y: hidden;
 }
 h1{
-	font-size: 50px;
+	font-size: 40px;
 	text-align: center;
 	margin-bottom: 2%;
 }
 h2{
-	font-size: 40px;
+    font-size: 27.5px;
 }
 a{
 	color: white;
-	font-size: 30px;
+	font-size: 25px;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
 } 
 a:hover{
-	font-size: 32.5px;
 	color: white;
 }
 input{
 	width: 100%;
 	border-radius: 20px;
 	border:none;
-	font-size: 35px;
+    font-size: 27.5px;
 	position: center;
 	color:grey;
 	margin-bottom: 5%;
@@ -70,8 +60,8 @@ input:focus{
 	outline: none;
 }
 img{
-	width:80px;
-	height:80px;
+	width:70px;
+	height:70px;
 	border-radius:25px 25px 25px 25px;
 }
 p{
@@ -93,7 +83,7 @@ p{
 .scroll{
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch; 
-	max-height: 375px;
+    max-height: calc(100vh - 225px);
 }
 .back{
 	font-size:48.5px;
@@ -122,6 +112,7 @@ p{
 }
 .pod-name{
 	margin-top: 3.75%;
+    margin-left: 3.5%;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
@@ -130,7 +121,7 @@ p{
 /* --- Menu --- */
 .menu{
 	text-align: center;
-	font-size: 35px;
+	font-size: 25px;
 	cursor: pointer;
 	background-color: #431651;
 	border-radius:25px 25px 25px 25px;

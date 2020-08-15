@@ -19,7 +19,10 @@ a{
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
-} 
+}
+a:hover{
+    color:white;
+}
 input{
 	width: 100%;
 	border-radius: 20px;
@@ -149,6 +152,7 @@ p{
 	max-height: 30vh;
 	overflow-y: scroll;
 	width: 80%;
+    -webkit-overflow-scrolling: touch;
 }
 /* --- Episode info --- */
 .min-text{
@@ -176,9 +180,10 @@ p{
 
 /* --- About-view --- */
 .about{
-	font-size: 30px;
-	margin-top: 3%;
+	font-size: 25px;
+    margin: 2.5%;
     overflow-y: scroll;
+    overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
     max-height: calc(100vh - 105px);
 }
@@ -196,8 +201,9 @@ p{
 	margin-top:3%;
 	font-size: 40px;
 }
-.about-icon:hover{
-	font-size: 45px;
-}
 
 * {margin-top: 20px;margin-top: env(safe-area-inset-top);}
+
+.fa.fa-play-circle {
+    margin-right: 2%;
+}

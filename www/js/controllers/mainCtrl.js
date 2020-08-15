@@ -27,7 +27,6 @@ poddsokApp.controller('MainCtrl', function ($scope, Model, Firebase) {
 
 	/* Get episodes for given podcast (from firebase, through Model) */
 	$scope.getEpisodes = function(pod){
-		
 		$scope.loading=true;
 		$scope.searchep='';
         Model.getEpisodes(pod.title).then(function(){
@@ -49,7 +48,7 @@ poddsokApp.controller('MainCtrl', function ($scope, Model, Firebase) {
 	$scope.setDeleteInfo = function(min,ep){
 		$scope.sent=false;
 		deleteInfo={
-			pod:podcast,
+        pod:podcast.title,
 			ep:{
 				nr:ep.nr,
 				name:ep.name,

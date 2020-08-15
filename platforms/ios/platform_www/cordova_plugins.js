@@ -7,6 +7,20 @@ module.exports = [
     "clobbers": [
       "window.Keyboard"
     ]
+  },
+  {
+    "id": "cordova-plugin-fastclick.FastClick",
+    "file": "plugins/cordova-plugin-fastclick/www/fastclick.js",
+    "pluginId": "cordova-plugin-fastclick",
+    "clobbers": [
+      "FastClick"
+    ]
+  },
+  {
+    "id": "cordova-plugin-fastclick.FastClickBootstrap",
+    "file": "plugins/cordova-plugin-fastclick/www/bootstrap.js",
+    "pluginId": "cordova-plugin-fastclick",
+    "runs": true
   }
 ];
 module.exports.metadata = 
@@ -14,7 +28,8 @@ module.exports.metadata =
 {
   "cordova-plugin-keyboard": "1.2.0",
   "cordova-plugin-whitelist": "1.3.4",
-  "cordova-plugin-splashscreen": "6.0.0"
+  "cordova-plugin-splashscreen": "6.0.0",
+  "cordova-plugin-fastclick": "1.0.0"
 };
 // BOTTOM OF METADATA
 });

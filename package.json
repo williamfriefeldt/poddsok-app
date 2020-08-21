@@ -12,7 +12,6 @@
   "dependencies": {
     "angular": "^1.8.0",
     "bootstrap": "^4.4.1",
-    "cordova-ios": "^4.5.5",
     "cordova-plugin-fastclick": "^1.0.0",
     "cordova-plugin-keyboard": "^1.2.0",
     "cordova-plugin-splashscreen": "^6.0.0",
@@ -25,10 +24,18 @@
       "cordova-plugin-whitelist": {},
       "cordova-plugin-keyboard": {},
       "cordova-plugin-splashscreen": {},
-      "cordova-plugin-fastclick": {}
+      "cordova-plugin-fastclick": {},
+      "cordova-plugin-wkwebview-engine": {},
+      "cordova-plugin-wkwebviewxhrfix": {},
+      "cordova-plugin-ionic-webview": {}
     },
     "platforms": [
       "ios"
     ]
+  },
+  "devDependencies": {
+    "cordova-ios": "^5.1.1",
+    "cordova-plugin-wkwebview-engine": "^1.2.1",
+    "cordova-plugin-wkwebviewxhrfix": "git+https://github.com/TheMattRay/cordova-plugin-wkwebviewxhrfix.git"
   }
 }

@@ -1,35 +1,94 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
-module.exports = [
-  {
-    "id": "cordova-plugin-keyboard.keyboard",
-    "file": "plugins/cordova-plugin-keyboard/www/keyboard.js",
-    "pluginId": "cordova-plugin-keyboard",
-    "clobbers": [
-      "window.Keyboard"
-    ]
-  },
-  {
-    "id": "cordova-plugin-fastclick.FastClick",
-    "file": "plugins/cordova-plugin-fastclick/www/fastclick.js",
-    "pluginId": "cordova-plugin-fastclick",
-    "clobbers": [
-      "FastClick"
-    ]
-  },
-  {
-    "id": "cordova-plugin-fastclick.FastClickBootstrap",
-    "file": "plugins/cordova-plugin-fastclick/www/bootstrap.js",
-    "pluginId": "cordova-plugin-fastclick",
-    "runs": true
-  }
-];
-module.exports.metadata = 
-// TOP OF METADATA
-{
-  "cordova-plugin-keyboard": "1.2.0",
-  "cordova-plugin-whitelist": "1.3.4",
-  "cordova-plugin-splashscreen": "6.0.0",
-  "cordova-plugin-fastclick": "1.0.0"
-};
-// BOTTOM OF METADATA
+  module.exports = [
+    {
+      "id": "cordova-plugin-device.device",
+      "file": "plugins/cordova-plugin-device/www/device.js",
+      "pluginId": "cordova-plugin-device",
+      "clobbers": [
+        "device"
+      ]
+    },
+    {
+      "id": "cordova-plugin-dialogs.notification",
+      "file": "plugins/cordova-plugin-dialogs/www/notification.js",
+      "pluginId": "cordova-plugin-dialogs",
+      "merges": [
+        "navigator.notification"
+      ]
+    },
+    {
+      "id": "cordova-plugin-fastclick.FastClick",
+      "file": "plugins/cordova-plugin-fastclick/www/fastclick.js",
+      "pluginId": "cordova-plugin-fastclick",
+      "clobbers": [
+        "FastClick"
+      ]
+    },
+    {
+      "id": "cordova-plugin-fastclick.FastClickBootstrap",
+      "file": "plugins/cordova-plugin-fastclick/www/bootstrap.js",
+      "pluginId": "cordova-plugin-fastclick",
+      "runs": true
+    },
+    {
+      "id": "cordova-plugin-inappbrowser.inappbrowser",
+      "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+      "pluginId": "cordova-plugin-inappbrowser",
+      "clobbers": [
+        "cordova.InAppBrowser.open"
+      ]
+    },
+    {
+      "id": "cordova-plugin-ionic-webview.IonicWebView",
+      "file": "plugins/cordova-plugin-ionic-webview/src/www/util.js",
+      "pluginId": "cordova-plugin-ionic-webview",
+      "clobbers": [
+        "Ionic.WebView"
+      ]
+    },
+    {
+      "id": "cordova-plugin-ionic-webview.ios-wkwebview-exec",
+      "file": "plugins/cordova-plugin-ionic-webview/src/www/ios/ios-wkwebview-exec.js",
+      "pluginId": "cordova-plugin-ionic-webview",
+      "clobbers": [
+        "cordova.exec"
+      ]
+    },
+    {
+      "id": "cordova-plugin-keyboard.keyboard",
+      "file": "plugins/cordova-plugin-keyboard/www/keyboard.js",
+      "pluginId": "cordova-plugin-keyboard",
+      "clobbers": [
+        "window.Keyboard"
+      ]
+    },
+    {
+      "id": "cordova-plugin-wkwebview-engine.ios-wkwebview-exec",
+      "file": "plugins/cordova-plugin-wkwebview-engine/src/www/ios/ios-wkwebview-exec.js",
+      "pluginId": "cordova-plugin-wkwebview-engine",
+      "clobbers": [
+        "cordova.exec"
+      ]
+    },
+    {
+      "id": "cordova-plugin-wkwebview-engine.ios-wkwebview",
+      "file": "plugins/cordova-plugin-wkwebview-engine/src/www/ios/ios-wkwebview.js",
+      "pluginId": "cordova-plugin-wkwebview-engine",
+      "clobbers": [
+        "window.WkWebView"
+      ]
+    }
+  ];
+  module.exports.metadata = {
+    "cordova-plugin-device": "2.0.4-dev",
+    "cordova-plugin-dialogs": "3.0.0-dev",
+    "cordova-plugin-fastclick": "1.0.0",
+    "cordova-plugin-inappbrowser": "4.0.1-dev",
+    "cordova-plugin-ionic-webview": "5.0.0",
+    "cordova-plugin-keyboard": "1.2.0",
+    "cordova-plugin-splashscreen": "6.0.0",
+    "cordova-plugin-whitelist": "1.3.4",
+    "cordova-plugin-wkwebview-engine": "1.2.1",
+    "cordova-plugin-wkwebviewxhrfix": "0.1.0"
+  };
 });
